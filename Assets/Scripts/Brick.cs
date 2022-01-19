@@ -5,7 +5,7 @@ using UnityEngine;
 public class Brick : MonoBehaviour
 {
     public int hits = 1;
-    public int point = 30;
+    public int points = 30;
     public Vector3 rotator;
     public Material hitMaterial;
 
@@ -28,6 +28,8 @@ public class Brick : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         hits--;
+        GameManager.Instance.Score += points;
+
         if (hits <= 0)
         {
             Destroy(gameObject);
