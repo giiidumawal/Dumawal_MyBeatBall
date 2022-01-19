@@ -15,7 +15,7 @@ public class Ball : MonoBehaviour
     }
 
    
-    void Update()
+    void FixedUpdate()
     {
         _rigidbody.velocity = _rigidbody.velocity.normalized * _speed;
         _velocity = _rigidbody.velocity;

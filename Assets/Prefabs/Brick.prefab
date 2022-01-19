@@ -108,5 +108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d169133d273cc734ab2f22f5fab5ae75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hits: 1
+  hits: 2
   point: 30
+  rotator: {x: 45, y: 0, z: 0}
+  hitMaterial: {fileID: 0}
